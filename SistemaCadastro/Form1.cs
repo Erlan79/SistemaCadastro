@@ -131,6 +131,7 @@ namespace SistemaCadastro
             foreach (Pessoa p in pessoas)
             {
                 lista.Items.Add(p.Nome);
+                lista.Items.Add(p.Telefone);
             }
         }
 
@@ -159,6 +160,11 @@ namespace SistemaCadastro
                     break;
 
             }
+
+        }
+
+        private void lista_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
