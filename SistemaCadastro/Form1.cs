@@ -130,8 +130,11 @@ namespace SistemaCadastro
 
             foreach (Pessoa p in pessoas)
             {
-                lista.Items.Add(p.Nome);
-                lista.Items.Add(p.Telefone);
+                lista.Items.Add("Nome: " + p.Nome
+                    + "| Telefone: "
+                    + p.Telefone
+                    + "| Sexo: "
+                    + p.Sexo);
             }
         }
 
