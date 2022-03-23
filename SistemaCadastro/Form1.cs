@@ -53,14 +53,14 @@ namespace SistemaCadastro
 
             if (txtNome.Text == "")
             {
-                MessageBox.Show("Preencha o campo nome.");
+                MessageBox.Show("Preencha o campo nome!");
                 txtNome.Focus();
                 return;
             }
 
             if (txtTelefone.Text == "(  )      -")
             {
-                MessageBox.Show("Preencha o campo telefone.");
+                MessageBox.Show("Preencha o campo telefone!");
                 txtTelefone.Focus();
                 return;
             }
